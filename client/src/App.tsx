@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import GuessInput from './components/GuessInput'
-import Feedback from './components/Feedback'
-import "./App.css";
+import GuessInput from './components/GuessInput';
+import Feedback from './components/Feedback';
+import './App.css'
 
-const App = () => {
-  // State variables
-  const [targetNumber, setTargetNumber] = useState(generateRandomNumber());
-  const [guess, setGuess] = useState('');
-  const [feedback, setFeedback] = useState('');
-  const [attempts, setAttempts] = useState(0);
+const App: React.FC = () => {
+  // State variables with their types
+  const [targetNumber, setTargetNumber] = useState<number>(generateRandomNumber());
+  const [guess, setGuess] = useState<string>('');
+  const [feedback, setFeedback] = useState<string>('');
+  const [attempts, setAttempts] = useState<number>(0);
 
   // Function to generate a random number between 1 and 100
-  function generateRandomNumber() {
+  function generateRandomNumber(): number {
     return Math.floor(Math.random() * 100) + 1;
   }
 

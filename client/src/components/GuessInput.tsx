@@ -1,6 +1,13 @@
 import React from 'react';
 
-const GuessInput = ({ guess, setGuess, handleGuess }) => {
+// Define prop types for the GuessInput component
+interface GuessInputProps {
+  guess: string;
+  setGuess: React.Dispatch<React.SetStateAction<string>>;
+  handleGuess: () => void;
+}
+
+const GuessInput: React.FC<GuessInputProps> = ({ guess, setGuess, handleGuess }) => {
   return (
     <div>
       <p>Guess a number between 1 and 100:</p>
