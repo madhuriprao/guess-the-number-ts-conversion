@@ -1,7 +1,11 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import GuessInput from './components/GuessInput'
 import Feedback from './components/Feedback'
+import Header from './components/Header';
 import "./App.css";
+import "./components/header.css"
+
+
 
 const App = () => {
   // State variables
@@ -40,13 +44,29 @@ const App = () => {
     // Clear the guess input
     setGuess('');
   };
-
+  const [darkMode, setDarkMode] = useState(false);
   return (
-    <div className="App">
-      <h1>Guess the Number Game</h1>
+     
+    <>
+    <div className='app'>
+    <Header/>
+    <div className={darkMode ? "dark-mode" : "light-mode"}>
+   
       <GuessInput guess={guess} setGuess={setGuess} handleGuess={handleGuess} />
       <Feedback feedback={feedback} attempts={attempts} />
+      <div className="switch-checkbox">
+        <label className="switch">
+          <input
+            type="checkbox"
+            onChange={() => setDarkMode(!darkMode)}
+          />
+          <span className="slider round"> </span>
+        </label>
+      </div>
     </div>
+    </div>
+  </>
+    
   );
 };
 
