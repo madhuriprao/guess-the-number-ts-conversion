@@ -12,7 +12,11 @@ nav {
     margin: auto;
     padding: 10px 20px;
 }
-
+.heading{
+  font-size: large;
+  font-weight: bolder;
+  color: rgb(204, 245, 204);
+}
 .dark-mode {
     background-color: #092316;
     color: #999;
