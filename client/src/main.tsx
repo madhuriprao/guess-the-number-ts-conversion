@@ -11,4 +11,3 @@ createRoot(document.getElementById('root')!).render(
     </div> 
   </StrictMode>,
 )
-// className="grid justify-items-center justify-center bg-slate-300"
