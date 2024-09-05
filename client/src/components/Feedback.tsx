@@ -1,6 +1,12 @@
 
 
-const Feedback = ({ feedback, attempts }) => {
+// Define prop types for the Feedback component
+interface FeedbackProps {
+  feedback: string;
+  attempts: number;
+}
+
+const Feedback: React.FC<FeedbackProps> = ({ feedback, attempts }) => {
   return (
     <div>
       <p>{feedback}</p>
