@@ -42,11 +42,13 @@ const App = () => {
   };
 
   return (
-    <div className="App">
-      <h1>Guess the Number Game</h1>
+    // <div className="App">
+    <div className='flex justify-center my-8 flex flex-col gap-5 bg-teal-100 p-9 
+    border-solid border-2 border-teal-500 rounded-lg ring-teal-800 ring-4'>
+      <h1 className='text-center text-italic font-bold font-serif  text-cyan-900 text-2xl'>Guess the Number Game</h1>
       <GuessInput guess={guess} setGuess={setGuess} handleGuess={handleGuess} />
       <Feedback feedback={feedback} attempts={attempts} />
-    </div>
+    // </div>
   );
 };
 
