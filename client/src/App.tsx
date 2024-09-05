@@ -48,7 +48,7 @@ const App = () => {
       <h1 className='text-center text-italic font-bold font-serif  text-cyan-900 text-2xl'>Guess the Number Game</h1>
       <GuessInput guess={guess} setGuess={setGuess} handleGuess={handleGuess} />
       <Feedback feedback={feedback} attempts={attempts} />
-    // </div>
+     </div>
   );
 };
 
