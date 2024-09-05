@@ -23,7 +23,7 @@ nav {
   }
   
   .light-mode {
-    background-color:rgb(173, 238, 173);
+    background-color:rgb(204, 245, 204);
     color: #333;
     height: 100vh;
     transition: background-color 0.25s ease-in-out;
