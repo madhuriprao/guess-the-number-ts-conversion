@@ -7,7 +7,7 @@ const Header = () => {
       <>
      <nav>
         
-     <h1>Guess the Number Game</h1>
+     <h1 className="heading">Guess the Number Game</h1>
     
      
       </nav></>
