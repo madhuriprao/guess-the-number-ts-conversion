@@ -44,7 +44,7 @@ const App = () => {
     // Clear the guess input
     setGuess('');
   };
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState<boolean>(false);
   return (
      
     <>
