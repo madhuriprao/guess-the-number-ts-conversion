@@ -52,8 +52,8 @@ const App: React.FC = () => {
     
     
       <>
-      <div className='flex justify-center my-8 flex-col gap-5 bg-teal-100 p-9
-    // border-solid border-2 border-teal-500 rounded-lg ring>-teal-800 ring-4'></div>
+      {/* <div className='flex justify-center my-8 flex-col gap-5 bg-teal-100 p-9
+    // border-solid border-2 border-teal-500 rounded-lg ring>-teal-800 ring-4'></div> */}
        
           <div className="flex justify-center my-8 flex-col gap-5 p-9 border-solid border-2 border-teal-500 rounded-lg ring-teal-800 ring-4">
             <h1 className="text-center italic font-bold font-serif text-cyan-900 text-2xl">
