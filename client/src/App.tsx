@@ -1,7 +1,7 @@
 import  { useState } from 'react';
 import GuessInput from './components/GuessInput'
 import Feedback from './components/Feedback'
-import Header from './components/Header';
+// import Header from './components/Header';
 import "./App.css";
 import "./components/header.css"
 
@@ -48,12 +48,14 @@ const App: React.FC = () => {
   return (
      
     <>
-    <div className=''>
-    <Header/>
-    <div className={darkMode ? "dark-mode" : "light-mode"}>
+    <div className='flex justify-center my-8 flex-col gap-5 bg-teal-100 p-9 
+    border-solid border-2 border-teal-500 rounded-lg ring-teal-800 ring-4'>
+    {/* <Header/> */}
+    {/* <div className={darkMode ? "dark-mode" : "light-mode"}> */}
    
       <GuessInput guess={guess} setGuess={setGuess} handleGuess={handleGuess} />
       <Feedback feedback={feedback} attempts={attempts} />
+      <div className={darkMode ? "dark-mode" : "light-mode"}></div>
       <div className="switch-checkbox">
         <label className="switch">
           <input
@@ -62,9 +64,10 @@ const App: React.FC = () => {
           />
           <span className="slider round"> </span>
         </label>
+        </div>
       </div>
-    </div>
-    </div>
+    {/* </div> */}
+    {/* </div> */}
   </>
     
   );
