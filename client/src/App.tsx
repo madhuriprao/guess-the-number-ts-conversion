@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-import React, { useState } from 'react';
-import GuessInput from './components/GuessInput';
-import Feedback from './components/Feedback';
-import './App.css'
-=======
 import  { useState } from 'react';
 import GuessInput from './components/GuessInput'
 import Feedback from './components/Feedback'
@@ -12,7 +6,6 @@ import "./App.css";
 import "./components/header.css"
 
 
->>>>>>> master
 
 const App: React.FC = () => {
   // State variables with their types
