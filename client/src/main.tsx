@@ -8,7 +8,7 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Header/>
 
-  <div className="h-screen w-full flex items-center justify-center 
+  <div className="h-screen  flex items-center justify-center 
    bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%"> 
     <App />
     </div>

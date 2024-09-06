@@ -8,9 +8,9 @@ interface FeedbackProps {
 
 const Feedback: React.FC<FeedbackProps> = ({ feedback, attempts }) => {
   return (
-    <div>
+    <div className="text-center mt-4">
       <p>{feedback}</p>
-      <p className="'text-center  text-cyan-900 text-base font-medium font-serif'">Attempts: {attempts}</p>
+      <p className="'text-center p-8 text-cyan-900 text-base font-medium font-serif'">Attempts: {attempts}</p>
     </div>
   );
 };
