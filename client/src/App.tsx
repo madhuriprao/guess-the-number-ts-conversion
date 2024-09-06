@@ -2,8 +2,8 @@ import { useState } from "react";
 import GuessInput from "./components/GuessInput";
 import Feedback from "./components/Feedback";
 // import Header from "./components/Header";
- import "./App.css";
-import "./components/header.css";
+//  import "./App.css";
+// import "./components/header.css";
 
 const App: React.FC = () => {
   // State variables with their types
@@ -47,41 +47,22 @@ const App: React.FC = () => {
     setGuess("");
 
   };
-  const [darkMode, setDarkMode] = useState<boolean>(false);
+  // const [darkMode, setDarkMode] = useState<boolean>(false);
   return (
     
     
       <>
       <div className='flex justify-center my-8 flex-col gap-5 bg-teal-100 p-9
     // border-solid border-2 border-teal-500 rounded-lg ring>-teal-800 ring-4'></div>
-        <div className={`app ${darkMode ? 'dark bg-gray-900 text-white' : 'light bg-teal-100 text-black'}`}>
-          {/* <Header /> */}
+       
           <div className="flex justify-center my-8 flex-col gap-5 p-9 border-solid border-2 border-teal-500 rounded-lg ring-teal-800 ring-4">
             <h1 className="text-center italic font-bold font-serif text-cyan-900 text-2xl">
               Guess the Number Game
             </h1>
             <GuessInput guess={guess} setGuess={setGuess} handleGuess={handleGuess} />
+           
             <Feedback feedback={feedback} attempts={attempts} />
-            <div className="switch-checkbox">
-        <label className="switch">
-          <input
-            type="checkbox"
-            onChange={() => setDarkMode(!darkMode)}
-          />
-          <span className="slider round"> </span>
-        </label>
-      </div>
-            {/* <div className="flex justify-center">
-              <label className="switch">
-                <input
-                  type="checkbox"
-                  className="mr-2"
-                  onChange={() => setDarkMode(!darkMode)}
-                />
-                <span className="text-sm">Dark Mode</span>
-              </label>
-            </div> */}
-          </div>
+         
           
         </div>
       </>
